@@ -1,0 +1,38 @@
+<div class="form-group">
+    <label for="exampleFormControlSelect1">Mostrar por categoría</label>
+    <select id="selectOptions" class="form-control"> 
+
+        <% if (data) { 
+            
+            //******Copia las opciones sin que se repitan
+            var opcionesFiltro=["Todas"];//opcion por defecto
+            for(var i = 0; i < opcionesList.length; i++) { //opcionesList siempre devuelve todas las categorias y se recorre
+                opcionesFiltro.push(opcionesList[i].Category);
+            } 
+            %>
+            <% for(var i = 0; i < opcionesFiltro.length; i++) { %>
+                <option> <%= opcionesFiltro[i]%> </option>
+            <% } %>
+        <% } %>
+    </select>
+    <button id="myButton" onclick="" class="btn btn-primary"> 
+        Mostrar
+    </button>
+
+   
+    <script type="text/javascript">
+        var selectOpciones = document.getElementById("selectOptions");
+        document.getElementById("myButton").onclick = function() {
+            if (selectOpciones.value == "Todas") { 
+                //nos reenvia a donde queremos ya sea de manera local o en now
+                location.href = `http://localhost:3000/`;
+                
+            } else {
+                
+                location.href = http//localhost:3000/Category/${selectOpciones.value}`;*/
+            
+            }
+        };
+    </script>
+
+</div>

@@ -1,0 +1,19 @@
+body {
+  background: rgb(205, 142, 241);  /* fallback for old browsers */
+ 
+}
+
+.navbar-brand {
+  font-family: 'Spicy Rice', cursive;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-family: 'Spicy Rice', cursive;
+}
+
+header img {
+  width: 60%;
+}
+
